@@ -58,7 +58,8 @@ body {
 
 .mano img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
 }
 .mano p{
     font-size: 1.3rem;
@@ -206,7 +207,8 @@ strong{
 
     .mano img {
         width: 100%;
-        height: auto;
+        height: 300px;
+        object-fit: cover;
     }
     .mano p{
         width: 50%;
