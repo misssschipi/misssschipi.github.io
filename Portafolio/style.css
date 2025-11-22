@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.archivo-font {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body {
+    background: #090c08;
+    margin: 0;
+    height: 99vh;
+}
+
+.grid {
+    display: grid;
+    height: 99vh;
+    width: 100vw;
+
+    /* 3 COLUMNAS + 3 FILAS */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    /* líneas de división visibles (puedes quitarlas) */
+    /* outline: 1px solid rgba(255,255,255,0.2); */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto {
+    grid-column: 1 / 2; /* columna 1 */
+    grid-row: 1 / 2;    /* fila 1 */
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 40px;
+}
+
+.texto p{
+    text-align: justify;
+    
+    text-align-last: justify;
+}
+
+.mano {
+    grid-column: 2 / 3; /* columna 2 */
+    grid-row: 2 / 3;    /* fila 2 */
+}
+
+.mano img {
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    grid-column: 3 / 4; /* columna 3 */
+    grid-row: 3 / 4;    /* fila 3 */
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+p, a {
+    color: #fcfc62; /* color igual al de tu mockup */
+    font-family: "Archivo", sans-serif; 
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+strong{
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 100;
+}
+.contenedor{
+    display: flex;
+}
+.columna{
+    width: 33%;
+    padding-top: 10vh;
+    padding-left: 5%;
+    padding-right: 40px;
+
+    
+}
+.columna_scroll{
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    height: 98vh;
+    padding-right: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+}
+.columna_scroll::-webkit-scrollbar{
+    display: none;
+}
+.columna_scroll img{
+    width: 100%;
+}
+.columna_scroll p{
+    align-self: flex-end;
+    width: 50%;
+    text-align: start;
+    
+    padding-left: 15px;
+    color: #feffea;
+    font-size: 1.3rem;
+}
+.columna p{
+    text-align: justify;
+    text-align-last: end                 ;
+    font-size: 1rem;
+}
+.columna:first-of-type{
+    padding-top: 10vh;
+}
+.imagen_central{
+    display: flex;
+}
+.imagen_central img{
+    width: 49%;
+    
+
+}
+.imagen_central p {
+    align-self: flex-start;
+    width: 50%;
+    text-align: start;
+    padding-left: 15px;
+}
+.espaciador_vertical{
+    margin-top: 10vh;
+    
+    width: 100%;
+}
