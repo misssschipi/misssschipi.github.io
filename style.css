@@ -201,9 +201,7 @@ strong{
         text-align-last: justify;
     }
 
-    .mano {
-        
-    }
+    
 
     .mano img {
         width: 100%;
@@ -211,19 +209,17 @@ strong{
         object-fit: cover;
     }
     .mano p{
-        width: 50%;
-        font-size: 1.3rem;
+        width: 60%;
+        font-size: 1rem;
         text-align: justify;
         
         text-align-last: justify;
     }
     .mano a{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
-    .link {
-        
-    }
+    
 
     p, a {
         color: #fcfc62; 
