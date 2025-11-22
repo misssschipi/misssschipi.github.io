@@ -78,7 +78,7 @@ body {
 }
 
 p, a {
-    color: #fcfc62; /* color igual al de tu mockup */
+    color: #fcfc62; 
     font-family: "Archivo", sans-serif; 
     font-weight: 100;
     font-size: 1.5rem;
@@ -167,4 +167,144 @@ strong{
 }
 .barra_navegacion a:hover{
     font-weight: 400;
+}
+
+/*movil*/
+
+@media(max-width:600px){
+    body{
+        height: auto;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 10%;
+        
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto {
+        
+        padding-left: 0;
+    }
+
+    .texto p{
+        text-align: justify;
+        
+        text-align-last: justify;
+    }
+
+    .mano {
+        
+    }
+
+    .mano img {
+        width: 100%;
+        height: auto;
+    }
+    .mano p{
+        width: 50%;
+        font-size: 1.3rem;
+        text-align: justify;
+        
+        text-align-last: justify;
+    }
+    .mano a{
+        font-size: 1.3rem;
+    }
+
+    .link {
+        
+    }
+
+    p, a {
+        color: #fcfc62; 
+        font-family: "Archivo", sans-serif; 
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+    strong{
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 100;
+    }
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .columna{
+        width: auto;
+        margin-top: 40px;
+        
+    }
+    .columna_scroll{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        padding-right: 0;
+        
+    }
+    
+    .columna_scroll p{
+        align-self: flex-end;
+        width: auto;
+        text-align: start;
+        
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #feffea;
+        font-size: 1.3rem;
+    }
+    .columna p{
+        text-align: end;
+                        ;
+        font-size: 1rem;
+    }
+    .columna:first-of-type{
+        padding-top: 0;
+    }
+    .imagen_central{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagen_central img{
+        width: 100%;
+        
+
+    }
+    .imagen_central p {
+        align-self: flex-start;
+        width: 50%;
+        text-align: start;
+        padding-left: 15px;
+    }
+    .espaciador_vertical{
+        margin-top: 5vh;
+        
+        width: 100%;
+    }
+    .barra_navegacion{
+        background-color: #fcfc62;
+        display: flex;
+        width: 100%;
+        position:fixed;
+        top: 0;
+        justify-content: space-around;
+        
+    }
+    .barra_navegacion a{
+        color: #090c08;
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+    .barra_navegacion a:hover{
+        font-weight: 400;
+    }
 }
